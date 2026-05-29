@@ -1,0 +1,14 @@
+Interview Pattern
+
+Questions belongs to the Fixed Size Sliding Window family.
+
+Typical signals:
+
+"Find all substrings..."
+"Anagram"
+"Permutation"
+Window size is fixed (len(p))
+
+Whenever you see those keywords, think:
+
+Sliding Window + Frequency Count.

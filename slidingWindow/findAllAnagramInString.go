@@ -25,3 +25,35 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
 */
 
 package slidingwindow
+
+func FindAnagrams(s string, p string) []int {
+	result := []int{}
+
+	if len(p) > len(s) {
+		return result
+	}
+
+	pCount := [26]int{}
+	windowCount := [26]int{}
+
+	for i := 0; i < len(p); i++ {
+		pCount[p[i]-'a']++
+	}
+
+	left := 0
+
+	for right := 0; right < len(s); right++ {
+		windowCount[s[right]-'a']++
+
+		if right-left+1 > len(p) {
+			windowCount[s[left]-'a']--
+			left++
+		}
+
+		if windowCount == pCount {
+			result = append(result, left)
+		}
+	}
+
+	return result
+}
