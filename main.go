@@ -1,7 +1,8 @@
 package main
 
 import (
-	slidingwindow "dsa/slidingWindow" // Ensure your go.mod module name is 'dsa'
+	// slidingwindow "dsa/slidingWindow" // Ensure your go.mod module name is 'dsa'
+	twopointer "dsa/twoPointer"
 	"fmt"
 )
 
@@ -15,10 +16,15 @@ func main() {
 	// res2 := slidingwindow.MinSubArrayLen(target, nums)
 	// fmt.Println(res2)
 
-	s := "cbaebabacd"
-	p := "abc"
-	s = "abab"
-	p = "ab"
-	res3 := slidingwindow.FindAnagrams(s, p)
-	fmt.Println(res3)
+	// s := "cbaebabacd"
+	// p := "abc"
+	// s = "abab"
+	// p = "ab"
+	// res3 := slidingwindow.FindAnagrams(s, p)
+	// fmt.Println(res3)
+
+	nums := []int{-1, 0, 1, 2, -1, -4}
+	res4 := twopointer.ThreeSum(nums)
+	fmt.Println(res4)
+
 }
