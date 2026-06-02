@@ -197,7 +197,7 @@ func ThreeSum(nums []int) [][]int {
 				result = append(result, []int{nums[i], nums[j], nums[k]})
 				j++
 
-				for j < k && nums[j] == nums[j+1] {
+				for j < k && nums[j] == nums[j-1] {
 					j++
 				}
 
