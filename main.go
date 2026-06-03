@@ -2,7 +2,7 @@ package main
 
 import (
 	// slidingwindow "dsa/slidingWindow" // Ensure your go.mod module name is 'dsa'
-	twopointer "dsa/twoPointer"
+	prefixsum "dsa/prefixSum"
 	"fmt"
 )
 
@@ -27,7 +27,17 @@ func main() {
 	// res4 := twopointer.ThreeSum(nums)
 	// fmt.Println(res4)
 
-	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	res5 := twopointer.MaxArea(height)
-	fmt.Println(res5)
+	// height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	// res5 := twopointer.MaxArea(height)
+	// fmt.Println(res5)
+
+	// nums := []int{1, 1, 1}
+	// k := 2
+	// res6 := prefixsum.SubarraySum(nums, k)
+	// fmt.Println(res6)
+
+	nums := []int{1, 1, 1}
+	k := 2
+	res7 := prefixsum.SubarraySum(nums, k)
+	fmt.Println(res7)
 }
