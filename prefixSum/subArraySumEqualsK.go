@@ -2,7 +2,8 @@
 560. Subarray Sum Equals K
 Medium
 
-Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+Given an array of integers nums and an integer k, return the total number of subarrays
+whose sum equals to k.
 
 A subarray is a contiguous non-empty sequence of elements within an array.
 
@@ -20,18 +21,23 @@ Output: 2
 
 ******************************************************************************
 *********************************	Algorithm	******************************
+******************************************************************************
+
+
 Intuition
-A brute force approach would generate all subarrays and compute their sums, leading to O(n²) complexity.
+A brute force approach would generate all subarrays and compute their sums,
+leading to O(n²) complexity.
 
 The key observation is:
 
 subarraySum(i...j) = prefixSum[j] - prefixSum[i-1]
+
 We want:
-
 prefixSum[j] - prefixSum[i-1] = k
-Rearranging:
 
+Rearranging:
 prefixSum[i-1] = prefixSum[j] - k
+
 So while traversing the array:
 
 if we've previously seen a prefix sum equal to (currentSum - k),

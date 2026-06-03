@@ -36,8 +36,12 @@ func main() {
 	// res6 := prefixsum.SubarraySum(nums, k)
 	// fmt.Println(res6)
 
-	nums := []int{1, 1, 1}
-	k := 2
-	res7 := prefixsum.SubarraySum(nums, k)
-	fmt.Println(res7)
+	// nums := []int{1, 1, 1}
+	// k := 2
+	// res7 := prefixsum.SubarraySum(nums, k)
+	// fmt.Println(res7)
+
+	nums := []int{0, 1, 1, 1, 1, 1, 0, 0, 0}
+	res8 := prefixsum.FindMaxLength(nums)
+	fmt.Println(res8)
 }
