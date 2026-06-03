@@ -23,8 +23,11 @@ func main() {
 	// res3 := slidingwindow.FindAnagrams(s, p)
 	// fmt.Println(res3)
 
-	nums := []int{-1, 0, 1, 2, -1, -4}
-	res4 := twopointer.ThreeSum(nums)
-	fmt.Println(res4)
+	// nums := []int{-1, 0, 1, 2, -1, -4}
+	// res4 := twopointer.ThreeSum(nums)
+	// fmt.Println(res4)
 
+	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	res5 := twopointer.MaxArea(height)
+	fmt.Println(res5)
 }
